@@ -1,37 +1,37 @@
 #!/bin/bash
 read -p "Do you want to setup IP address? <yes/no> " prompt1
 if [ $prompt1 = yes ]
-	then	sh /home/pi/set_ip.sh
+	then	sh /home/pi/Raspberry-NicheKiosk/set_ip.sh
 	else	echo "Skipping IP setup"
 fi
 
 read -p "Do you want to enable SSH? <yes/no> " prompt2
 if [ $prompt2 = yes ]
-	then	sh /home/pi/enable_ssh.sh
+	then	sh /home/pi/Raspberry-NicheKiosk/enable_ssh.sh
 	else	echo "SSH will not enabled"
 fi
 
 read -p "Do you want to change the default password? <yes/no> " prompt3
 if [ $prompt3 = yes ]
-	then	sh /home/pi/change_password.sh
+	then	sh /home/pi/Raspberry-NicheKiosk/change_password.sh
 	else	echo "No password will be set"
 fi
 
 read -p "Would you like to set the resolution to full HD? <yes/no> " prompt4
 if [ $prompt4 = yes ]
-	then	sh /home/pi/set_resolution.sh
+	then	sh /home/pi/Raspberry-NicheKiosk/set_resolution.sh
 	else	echo "Resolution was not set"
 fi
 
 read -p "Do you want to run update and install script? <yes/no> " prompt5
 if [ $prompt5 = yes ]
-	then	sh /home/pi/setup_installs.sh
+	then	sh /home/pi/Raspberry-NicheKiosk/setup_installs.sh
 	else	echo "Update and install script was not runned"
 fi
 
 read -p "Do you want to setup autostartup? <yes/no> " prompt6
 if [ $prompt6 = yes ]
-	then	sh /home/pi/autostart.sh
+	then	sh /home/pi/Raspberry-NicheKiosk/autostart.sh
 	else	echo "Autostart was not setup"
 fi
 
