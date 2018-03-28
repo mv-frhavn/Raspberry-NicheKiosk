@@ -18,6 +18,5 @@ if [ $add_ip = yes ]
 	else 	echo "The settings was not applied"
 fi
 echo "The IP will be active after the reboot later"
-sleep 2;
-clear
+sleep 3;
 
