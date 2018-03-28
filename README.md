@@ -3,8 +3,11 @@
 This is a collection of scripts to setup our Pi kiosk screens.
 
 1: Start the Pi
+
 2: Open Terminal and run this command: git clone https://github.com/mv-frhavn/Raspberry-NicheKiosk
-3: Start the Setup script in Terminal with: sudo sh Raspberry-NicheKiosk/kiosk_setup.sh
+
+3: Run this command as the next one in terminal: sudo sh Raspberry-NicheKiosk/kiosk_setup.sh
+
 4: Follow the terminal and the install is done
 
 
