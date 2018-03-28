@@ -17,15 +17,7 @@ if [ $add_ip = yes ]
 		echo "The settings was applied"
 	else 	echo "The settings was not applied"
 fi
-echo "Do you want to restart the interface?"
-read -p "yes or no : " restart_eth
-if [ $restart_eth = yes ]
-	then 	sudo ifconfig eth0 down
-		sleep 2; 
-		sudo ifconfig eth0 up
-		echo "The interface was restarted"
-	else	echo "The interface was not restarted"
-fi
+echo "The IP will be active after the reboot later"
 sleep 2;
 clear
 
